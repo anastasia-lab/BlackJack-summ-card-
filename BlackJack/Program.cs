@@ -10,16 +10,16 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {
-            Console.Write("Добро пожаловать.\n");
+            Console.WriteLine("Добро пожаловать.");
             Console.Write("\nУкажите количество карт, которые имеются у Вас на руках: ");
             int CountCard = int.Parse(Console.ReadLine());
             int summ = 0;
 
             for (int i = 0; i < CountCard; i++)
             {
-                Console.Write("\nВалет - J, Дама - Q, Король - K, Туз - T \n");
+                Console.WriteLine("\nВалет - J, Дама - Q, Король - K, Туз - T");
                 Console.Write("Введите номинал карты: ");
-                var NominalCard = Console.ReadLine().ToUpper();
+                string NominalCard = Console.ReadLine().ToUpper();
                 switch (NominalCard)
                 {
                     case "1":
@@ -66,7 +66,7 @@ namespace BlackJack
                         break;
                 }
             }
-            Console.WriteLine("Сумма карт состовляет: {0}", summ);
+            Console.WriteLine($"\nСумма карт состовляет: {summ}");
 
             Console.ReadKey();
         }
