@@ -21,38 +21,16 @@ namespace BlackJack
             {
                 Console.Write($"Введите номинал {i} карты: ");
                 string NominalCard = Console.ReadLine().ToUpper();
+
+                bool IsNumber = int.TryParse(NominalCard, out int result);
+                if (IsNumber == true && int.Parse(NominalCard) <= 10)
+                {
+                    int NumberNominalCard = Convert.ToInt32(NominalCard);
+                    summ = summ + NumberNominalCard;
+                }
+
                 switch (NominalCard)
                 {
-                    case "1":
-                        summ = summ + 1;
-                        break;
-                    case "2":
-                        summ = summ + 2;
-                        break;
-                    case "3":
-                        summ = summ + 3;
-                        break;
-                    case "4":
-                        summ = summ + 4;
-                        break;
-                    case "5":
-                        summ = summ + 5;
-                        break;
-                    case "6":
-                        summ = summ + 6;
-                        break;
-                    case "7":
-                        summ = summ + 7;
-                        break;
-                    case "8":
-                        summ = summ + 8;
-                        break;
-                    case "9":
-                        summ = summ + 9;
-                        break;
-                    case "10":
-                        summ = summ + 10;
-                        break;
                     case "J":
                         summ = summ + 10;
                         break;
