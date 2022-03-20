@@ -24,46 +24,46 @@ namespace BlackJack
                 switch (NominalCard)
                 {
                     case "1":
-                        summ += 1;
+                        summ = summ + 1;
                         break;
                     case "2":
-                        summ += 2;
+                        summ = summ + 2;
                         break;
                     case "3":
-                        summ += 3;
+                        summ = summ + 3;
                         break;
                     case "4":
-                        summ += 4;
+                        summ = summ + 4;
                         break;
                     case "5":
-                        summ += 5;
+                        summ = summ + 5;
                         break;
                     case "6":
-                        summ += 6;
+                        summ = summ + 6;
                         break;
                     case "7":
-                        summ += 7;
+                        summ = summ + 7;
                         break;
                     case "8":
-                        summ += 8;
+                        summ = summ + 8;
                         break;
                     case "9":
-                        summ += 9;
+                        summ = summ + 9;
                         break;
                     case "10":
-                        summ += 10;
+                        summ = summ + 10;
                         break;
                     case "J":
-                        summ += 10;
+                        summ = summ + 10;
                         break;
                     case "Q":
-                        summ += 10;
+                        summ = summ + 10;
                         break;
                     case "K":
-                        summ += 10;
+                        summ = summ + 10;
                         break;
                     case "T":
-                        summ += 11;
+                        summ = summ + 11;
                         break;
                 }
             }
