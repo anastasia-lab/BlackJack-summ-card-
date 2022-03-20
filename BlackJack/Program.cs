@@ -17,7 +17,7 @@ namespace BlackJack
 
             Console.WriteLine("\nВалет - J, Дама - Q, Король - K, Туз - T\n");
 
-            for (int i = 1; i < CountCard + 1; i++)
+            for (int i = 1; i <= CountCard; i++)
             {
                 Console.Write($"Введите номинал {i} карты: ");
                 string NominalCard = Console.ReadLine().ToUpper();
